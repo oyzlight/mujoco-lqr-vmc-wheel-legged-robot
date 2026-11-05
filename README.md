@@ -6,22 +6,31 @@
 
 ## 视频演示
 
-以下动图是压缩预览，MP4 是完整的正常速度仿真录像。所有录像均由仓库中的 `tools/record_demos.py` 运行实际控制器生成，并检查结尾状态。
+以下六段视频可直接在本页点击播放。[原始 MP4 与动图目录](media/)。录像均为实际控制器驱动的正常速度仿真，并检查结尾状态。
 
-| 前进、后退与停车 | 左转、右转与原地旋转 |
-| :---: | :---: |
-| ![前后移动](media/movement.gif) | ![左右旋转](media/rotation.gif) |
-| [完整 MP4](media/movement.mp4) | [完整 MP4](media/rotation.mp4) |
+### 1. 前进、后退与停车
 
-| 前倾倒地后起身 | 后倾倒地后起身 |
-| :---: | :---: |
-| ![前倾起身](media/self_righting_forward.gif) | ![后倾起身](media/self_righting_backward.gif) |
-| [完整 MP4](media/self_righting_forward.mp4) | [完整 MP4](media/self_righting_backward.mp4) |
+https://github.com/user-attachments/assets/62dc5c75-a430-4a0a-bd58-4cbfd09985e2
 
-| 蹲伏、起跳、收腿与落地 | 15 cm 台阶助跑跳跃 |
-| :---: | :---: |
-| ![普通跳跃](media/jump.gif) | ![15 cm 上阶](media/step15.gif) |
-| [完整 MP4](media/jump.mp4) | [完整 MP4](media/step15.mp4) |
+### 2. 左转、右转与原地旋转
+
+https://github.com/user-attachments/assets/e88945bc-4f44-4d19-87c5-188407762554
+
+### 3. 前倾倒地后电机起身
+
+https://github.com/user-attachments/assets/b067bf93-f98f-421b-a0ad-271e13407a6e
+
+### 4. 后倾倒地后电机起身
+
+https://github.com/user-attachments/assets/7bdaae7c-49db-4d05-8a3b-7590090dcc90
+
+### 5. 蹲伏、起跳、收腿与落地
+
+https://github.com/user-attachments/assets/2f362bad-22f6-4857-86ba-418e5c473f95
+
+### 6. 15 cm 台阶助跑跳跃
+
+https://github.com/user-attachments/assets/5a87a7dc-c783-4f20-aaab-5c655ff1dddf
 
 起身视频从预设的前倾 / 后倾 70° 倒地初始姿态开始，后续完全由电机力矩和接触动力学完成。验证还覆盖了前后 110° 的初始姿态。**完全侧躺和接近倒扣目前不支持**。
 
