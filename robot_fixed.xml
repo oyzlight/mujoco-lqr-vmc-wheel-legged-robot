@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="cnc_two_loop_four_hip_fixed">
+  <!--Corrected CAD topology: four hip input motors, two wheel motors, passive knee pins.-->
+  <!--Mass/inertia and collision proxies are estimates, not measured hardware identification.-->
+  <compiler angle="radian" meshdir="closed_meshes" inertiafromgeom="false" autolimits="true" />
+  <option timestep=".0005" integrator="implicitfast" gravity="0 0 -9.81" solver="Newton" iterations="100" tolerance="1e-10" cone="elliptic" />
+  <default>
+    <joint axis="0 1 0" damping=".005" armature=".00001" />
+    <geom contype="0" conaffinity="0" mass="0" />
+    <default class="collision">
+      <geom contype="2" conaffinity="1" group="3" rgba=".8 .2 .1 .15" friction="1 .005 .0001" solref=".005 1" solimp=".95 .99 .001" />
+    </default>
+  </default>
+  <visual>
+    <global offwidth="1440" offheight="1000" />
+  </visual>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1=".8 .83 .86" rgb2=".68 .72 .76" />
+    <material name="floor" texture="grid" texrepeat="10 10" texuniform="true" />
+    <mesh name="Fixed_Chassis" file="Fixed_Chassis.stl" maxhullvert="64" />
+    <mesh name="L_Coupler_29" file="L_Coupler_29.stl" maxhullvert="64" />
+    <mesh name="L_Coupler_35" file="L_Coupler_35.stl" maxhullvert="64" />
+    <mesh name="L_Input_A" file="L_Input_A.stl" maxhullvert="64" />
+    <mesh name="L_Input_B" file="L_Input_B.stl" maxhullvert="64" />
+    <mesh name="L_Lower_Leg" file="L_Lower_Leg.stl" maxhullvert="64" />
+    <mesh name="L_Main_B" file="L_Main_B.stl" maxhullvert="64" />
+    <mesh name="L_Output_A" file="L_Output_A.stl" maxhullvert="64" />
+    <mesh name="L_Rocker_30" file="L_Rocker_30.stl" maxhullvert="64" />
+    <mesh name="L_Wheel" file="L_Wheel.stl" maxhullvert="64" />
+    <mesh name="R_Coupler_29" file="R_Coupler_29.stl" maxhullvert="64" />
+    <mesh name="R_Coupler_35" file="R_Coupler_35.stl" maxhullvert="64" />
+    <mesh name="R_Input_A" file="R_Input_A.stl" maxhullvert="64" />
+    <mesh name="R_Input_B" file="R_Input_B.stl" maxhullvert="64" />
+    <mesh name="R_Lower_Leg" file="R_Lower_Leg.stl" maxhullvert="64" />
+    <mesh name="R_Main_B" file="R_Main_B.stl" maxhullvert="64" />
+    <mesh name="R_Output_A" file="R_Output_A.stl" maxhullvert="64" />
+    <mesh name="R_Rocker_30" file="R_Rocker_30.stl" maxhullvert="64" />
+    <mesh name="R_Wheel" file="R_Wheel.stl" maxhullvert="64" />
+  </asset>
+  <worldbody>
+    <light pos="0 -1 2" dir="0 0 -1" diffuse=".8 .8 .8" ambient=".35 .35 .35" />
+    <light pos="0 1 1" dir="0 0 -1" />
+    <geom name="ground" type="plane" size="5 5 .1" material="floor" contype="1" conaffinity="2" />
+    <body name="chassis" pos="0 0 0.35">
+      <inertial mass="3" pos="-.005 0 -.025" diaginertia=".013 .012 .020" />
+      <geom class="collision" name="chassis_collision" type="box" pos="0 0 -.026" size=".11 .085 .04" />
+      <site name="imu" size=".003" />
+      <body name="left_Input_A" pos="-0.0458111248724 0.123 -0.0386749019179">
+        <joint name="left_hip_A" type="hinge" limited="false" />
+        <inertial mass="0.03" pos="0 0 0" fullinertia="2.6425e-06 2.16e-06 2.6425e-06 0 0 0" />
+        <geom name="L_Input_A_visual" type="mesh" mesh="L_Input_A" pos="0.0458111248724 -0.123 0.0386749019179" rgba=".12 .13 .14 1" group="2" />
+      </body>
+      <body name="left_Input_B" pos="0.0458218951277 0.123 -0.0386749019179">
+        <joint name="left_hip_B" type="hinge" limited="false" />
+        <inertial mass="0.03" pos="0 0 0" fullinertia="2.6425e-06 2.16e-06 2.6425e-06 0 0 0" />
+        <geom name="L_Input_B_visual" type="mesh" mesh="L_Input_B" pos="-0.0458218951277 -0.123 0.0386749019179" rgba=".12 .13 .14 1" group="2" />
+      </body>
+      <body name="left_Output_A" pos="5.38512766733e-06 0.123 -0.0100000000001">
+        <joint name="left_output_A" type="hinge" limited="false" />
+        <inertial mass="0.06" pos="0.0222512270782 0 0.0113966176348" fullinertia="6.46878259027e-06 1.466e-05 1.25112174097e-05 0 -4.19537189808e-06 0" />
+        <body name="left_Coupler_29" pos="0.0445024541565 0 0.0227932352695">
+          <joint name="left_rod29_pin" type="hinge" limited="false" />
+          <inertial mass="0.015" pos="-0.0140348318165 0 -0.0265145902454" fullinertia="4.17330338188e-06 5.04e-06 1.94669661811e-06 0 -1.63736238502e-06 0" />
+          <site name="left_C0" pos="-0.028069663633 0 -0.0530291804908" size=".002" rgba="1 .2 .2 1" group="4" />
+          <geom name="L_Coupler_29_visual" type="mesh" mesh="L_Coupler_29" pos="-0.0445078392841 -0.123 -0.0127932352694" rgba=".68 .69 .65 1" group="2" />
+        </body>
+        <geom name="L_Output_A_visual" type="mesh" mesh="L_Output_A" pos="-5.38512766733e-06 -0.123 0.0100000000001" rgba=".85 .72 .1 1" group="2" />
+      </body>
+      <body name="left_Main_B" pos="5.38512766733e-06 0.123 -0.0100000000001">
+        <joint name="left_output_B" type="hinge" limited="false" />
+        <inertial mass="0.15" pos="-0.0476667448606 0 -0.0274386849976" fullinertia="4.7100085027e-05 0.00015665 0.000120349914973 0 -6.30608533737e-05 0" />
+        <body name="left_Rocker_30" pos="-0.0433334044187 0 -0.0249442590887">
+          <joint name="left_rocker_pin" type="hinge" limited="false" />
+          <inertial mass="0.035" pos="0.014736787772 0 0.00611995994873" fullinertia="2.77162467311e-06 4.23064627547e-06 3.97902160236e-06 0 -6.05909096941e-07 0" />
+          <body name="left_Coupler_35" pos="-0.0302926193982 0 0.0175316060301">
+            <joint name="left_rod35_pin" type="hinge" limited="false" />
+            <inertial mass="0.015" pos="-0.0262835125076 0 -0.0144629516442" fullinertia="2.00037866916e-06 5.04e-06 4.11962133084e-06 0 -1.67260354993e-06 0" />
+            <site name="left_D0" pos="-0.0525670250152 0 -0.0289259032885" size=".002" rgba="1 .2 .2 1" group="4" />
+            <geom name="L_Coupler_35_visual" type="mesh" mesh="L_Coupler_35" pos="0.0736206386893 -0.123 0.0174126530586" rgba=".68 .69 .65 1" group="2" />
+          </body>
+          <site name="left_C1" pos="0.0597661949422 0 -0.00529168613268" size=".002" rgba="1 .2 .2 1" group="4" />
+          <geom name="L_Rocker_30_visual" type="mesh" mesh="L_Rocker_30" pos="0.0433280192911 -0.123 0.0349442590887" rgba=".68 .69 .65 1" group="2" />
+        </body>
+        <body name="left_Lower_Leg" pos="-0.0953334897212 0 -0.0548773699951">
+          <joint name="left_lower_pin" type="hinge" limited="false" />
+          <inertial mass="0.35" pos="0.105022426448 0.0272 -0.011029503297" fullinertia="0.00012479431915 0.00131437593972 0.00138584307446 -0.000330244282345 0.000133912882388 3.46824056932e-05" />
+          <body name="left_Wheel" pos="0.13127803306 0.034 -0.0137868791213">
+            <joint name="left_wheel_joint" type="hinge" limited="false" />
+            <inertial mass="0.2" pos="0 0 0" fullinertia="9.5e-05 0.00016 9.5e-05 0 0 0" />
+            <geom class="collision" name="left_wheel_collision" type="cylinder" size=".04 .015" euler="1.57079632679 0 0" />
+            <geom name="L_Wheel_visual" type="mesh" mesh="L_Wheel" pos="-0.0359499284665 -0.157 0.0786642491165" rgba=".38 .48 .22 1" group="2" />
+          </body>
+          <geom class="collision" name="left_Lower_Leg_collision" type="capsule" fromto="0 0 0 0.13127803306 0.034 -0.0137868791213" size=".006" />
+          <site name="left_D1" pos="-0.0308595591109 0 0.0185388136481" size=".002" rgba="1 .2 .2 1" group="4" />
+          <geom name="L_Lower_Leg_visual" type="mesh" mesh="L_Lower_Leg" pos="0.0953281045935 -0.123 0.0648773699952" rgba=".85 .72 .1 1" group="2" />
+        </body>
+        <geom class="collision" name="left_Main_B_collision" type="capsule" fromto="0 0 0 -0.0953334897212 0 -0.0548773699951" size=".006" />
+        <geom name="L_Main_B_visual" type="mesh" mesh="L_Main_B" pos="-5.38512766733e-06 -0.123 0.0100000000001" rgba=".85 .72 .1 1" group="2" />
+      </body>
+      <body name="right_Input_A" pos="-0.0458111248724 -0.123 -0.0386749019179">
+        <joint name="right_hip_A" type="hinge" limited="false" />
+        <inertial mass="0.03" pos="0 0 0" fullinertia="2.6425e-06 2.16e-06 2.6425e-06 0 0 0" />
+        <geom name="R_Input_A_visual" type="mesh" mesh="R_Input_A" pos="0.0458111248724 0.123 0.0386749019179" rgba=".12 .13 .14 1" group="2" />
+      </body>
+      <body name="right_Input_B" pos="0.0458218951277 -0.123 -0.0386749019179">
+        <joint name="right_hip_B" type="hinge" limited="false" />
+        <inertial mass="0.03" pos="0 0 0" fullinertia="2.6425e-06 2.16e-06 2.6425e-06 0 0 0" />
+        <geom name="R_Input_B_visual" type="mesh" mesh="R_Input_B" pos="-0.0458218951277 0.123 0.0386749019179" rgba=".12 .13 .14 1" group="2" />
+      </body>
+      <body name="right_Output_A" pos="5.38512766733e-06 -0.123 -0.0100000000001">
+        <joint name="right_output_A" type="hinge" limited="false" />
+        <inertial mass="0.06" pos="0.0222512270782 0 0.0113966176348" fullinertia="6.46878259027e-06 1.466e-05 1.25112174097e-05 0 -4.19537189808e-06 0" />
+        <body name="right_Coupler_29" pos="0.0445024541565 0 0.0227932352695">
+          <joint name="right_rod29_pin" type="hinge" limited="false" />
+          <inertial mass="0.015" pos="-0.0140348318165 0 -0.0265145902454" fullinertia="4.17330338188e-06 5.04e-06 1.94669661811e-06 0 -1.63736238502e-06 0" />
+          <site name="right_C0" pos="-0.028069663633 0 -0.0530291804908" size=".002" rgba="1 .2 .2 1" group="4" />
+          <geom name="R_Coupler_29_visual" type="mesh" mesh="R_Coupler_29" pos="-0.0445078392841 0.123 -0.0127932352694" rgba=".68 .69 .65 1" group="2" />
+        </body>
+        <geom name="R_Output_A_visual" type="mesh" mesh="R_Output_A" pos="-5.38512766733e-06 0.123 0.0100000000001" rgba=".85 .72 .1 1" group="2" />
+      </body>
+      <body name="right_Main_B" pos="5.38512766733e-06 -0.123 -0.0100000000001">
+        <joint name="right_output_B" type="hinge" limited="false" />
+        <inertial mass="0.15" pos="-0.0476667448606 0 -0.0274386849976" fullinertia="4.7100085027e-05 0.00015665 0.000120349914973 0 -6.30608533737e-05 0" />
+        <body name="right_Rocker_30" pos="-0.0433334044187 0 -0.0249442590887">
+          <joint name="right_rocker_pin" type="hinge" limited="false" />
+          <inertial mass="0.035" pos="0.014736787772 0 0.00611995994873" fullinertia="2.77162467311e-06 4.23064627547e-06 3.97902160236e-06 0 -6.05909096941e-07 0" />
+          <body name="right_Coupler_35" pos="-0.0302926193982 0 0.0175316060301">
+            <joint name="right_rod35_pin" type="hinge" limited="false" />
+            <inertial mass="0.015" pos="-0.0262835125076 0 -0.0144629516442" fullinertia="2.00037866916e-06 5.04e-06 4.11962133084e-06 0 -1.67260354993e-06 0" />
+            <site name="right_D0" pos="-0.0525670250152 0 -0.0289259032885" size=".002" rgba="1 .2 .2 1" group="4" />
+            <geom name="R_Coupler_35_visual" type="mesh" mesh="R_Coupler_35" pos="0.0736206386893 0.123 0.0174126530586" rgba=".68 .69 .65 1" group="2" />
+          </body>
+          <site name="right_C1" pos="0.0597661949422 0 -0.00529168613268" size=".002" rgba="1 .2 .2 1" group="4" />
+          <geom name="R_Rocker_30_visual" type="mesh" mesh="R_Rocker_30" pos="0.0433280192911 0.123 0.0349442590887" rgba=".68 .69 .65 1" group="2" />
+        </body>
+        <body name="right_Lower_Leg" pos="-0.0953334897212 0 -0.0548773699951">
+          <joint name="right_lower_pin" type="hinge" limited="false" />
+          <inertial mass="0.35" pos="0.105022426448 -0.0272 -0.011029503297" fullinertia="0.00012479431915 0.00131437593972 0.00138584307446 0.000330244282345 0.000133912882388 -3.46824056932e-05" />
+          <body name="right_Wheel" pos="0.13127803306 -0.034 -0.0137868791213">
+            <joint name="right_wheel_joint" type="hinge" limited="false" />
+            <inertial mass="0.2" pos="0 0 0" fullinertia="9.5e-05 0.00016 9.5e-05 0 0 0" />
+            <geom class="collision" name="right_wheel_collision" type="cylinder" size=".04 .015" euler="1.57079632679 0 0" />
+            <geom name="R_Wheel_visual" type="mesh" mesh="R_Wheel" pos="-0.0359499284665 0.157 0.0786642491165" rgba=".38 .48 .22 1" group="2" />
+          </body>
+          <geom class="collision" name="right_Lower_Leg_collision" type="capsule" fromto="0 0 0 0.13127803306 -0.034 -0.0137868791213" size=".006" />
+          <site name="right_D1" pos="-0.0308595591109 0 0.0185388136481" size=".002" rgba="1 .2 .2 1" group="4" />
+          <geom name="R_Lower_Leg_visual" type="mesh" mesh="R_Lower_Leg" pos="0.0953281045935 0.123 0.0648773699952" rgba=".85 .72 .1 1" group="2" />
+        </body>
+        <geom class="collision" name="right_Main_B_collision" type="capsule" fromto="0 0 0 -0.0953334897212 0 -0.0548773699951" size=".006" />
+        <geom name="R_Main_B_visual" type="mesh" mesh="R_Main_B" pos="-5.38512766733e-06 0.123 0.0100000000001" rgba=".85 .72 .1 1" group="2" />
+      </body>
+      <geom name="Fixed_Chassis_visual" type="mesh" mesh="Fixed_Chassis" pos="-0 -0 -0" rgba=".68 .7 .72 1" group="2" />
+    </body>
+  </worldbody>
+  <equality>
+    <connect name="left_loop_C" site1="left_C0" site2="left_C1" solref=".002 1" solimp=".999 .999 .001" />
+    <connect name="left_loop_D" site1="left_D0" site2="left_D1" solref=".002 1" solimp=".999 .999 .001" />
+    <joint name="left_gear_A" joint1="left_hip_A" joint2="left_output_A" polycoef="0 -1 0 0 0" solref=".002 1" solimp=".999 .999 .001" />
+    <joint name="left_gear_B" joint1="left_hip_B" joint2="left_output_B" polycoef="0 -1 0 0 0" solref=".002 1" solimp=".999 .999 .001" />
+    <connect name="right_loop_C" site1="right_C0" site2="right_C1" solref=".002 1" solimp=".999 .999 .001" />
+    <connect name="right_loop_D" site1="right_D0" site2="right_D1" solref=".002 1" solimp=".999 .999 .001" />
+    <joint name="right_gear_A" joint1="right_hip_A" joint2="right_output_A" polycoef="0 -1 0 0 0" solref=".002 1" solimp=".999 .999 .001" />
+    <joint name="right_gear_B" joint1="right_hip_B" joint2="right_output_B" polycoef="0 -1 0 0 0" solref=".002 1" solimp=".999 .999 .001" />
+  </equality>
+  <actuator>
+    <motor name="left_hip_A_motor" joint="left_hip_A" gear="1" ctrllimited="true" ctrlrange="-7 7" />
+    <motor name="left_hip_B_motor" joint="left_hip_B" gear="1" ctrllimited="true" ctrlrange="-7 7" />
+    <motor name="left_wheel_joint_motor" joint="left_wheel_joint" gear="1" ctrllimited="true" ctrlrange="-2 2" />
+    <motor name="right_hip_A_motor" joint="right_hip_A" gear="1" ctrllimited="true" ctrlrange="-7 7" />
+    <motor name="right_hip_B_motor" joint="right_hip_B" gear="1" ctrllimited="true" ctrlrange="-7 7" />
+    <motor name="right_wheel_joint_motor" joint="right_wheel_joint" gear="1" ctrllimited="true" ctrlrange="-2 2" />
+  </actuator>
+  <sensor>
+    <gyro name="imu_gyro" site="imu" />
+    <accelerometer name="imu_accelerometer" site="imu" />
+    <framequat name="imu_quaternion" objtype="site" objname="imu" />
+  </sensor>
+</mujoco>

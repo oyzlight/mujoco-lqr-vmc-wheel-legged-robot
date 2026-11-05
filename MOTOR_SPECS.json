@@ -1,0 +1,32 @@
+{
+    "user_confirmed_leg_motor":  "DM-J4310-2EC V1.1, 24 V",
+    "user_wheel_motor":  "DM-H6215",
+    "leg":  {
+                "rated_torque_Nm":  3,
+                "peak_torque_Nm":  7,
+                "rated_speed_rpm":  120,
+                "no_load_speed_rpm_at_24V":  200,
+                "internal_reduction_ratio":  10,
+                "note":  "Torques/speeds refer to motor-module OUTPUT. Do not multiply torque by ten again."
+            },
+    "wheel":  {
+                  "rated_torque_Nm":  1,
+                  "peak_torque_Nm":  2,
+                  "rated_speed_rpm":  120,
+                  "no_load_speed_rpm_at_24V":  320,
+                  "internal_reduction_ratio":  1
+              },
+    "sources":  [
+                    "https://www.mdmbot.com/index.php?c=show\u0026id=84",
+                    "https://www.mdmbot.com/index.php?c=show\u0026id=115",
+                    "https://www.worldrobotconference.com/profile/robot/download/2025/06/30/达妙科技DAMIAO%20-%202025年产品选型手册_20250630192546A441.pdf"
+                ],
+    "simulation_envelope":  {
+                                "name":  "dm4310-v11-24v",
+                                "motoring":  "abs(torque) \u003c= peak * max(0, 1 - abs(output_speed)/no_load_speed)",
+                                "braking":  "abs(torque) \u003c= peak",
+                                "status":  "Engineering approximation using published endpoints; NOT measured or digitized manufacturer torque-speed curve",
+                                "battery_voltage":  "Assumed fixed 24 V; no bus current, voltage sag, regeneration or thermal model",
+                                "transmission":  "Four hip INPUT motor-module output shafts; external 1:1 reverse gears and two closed loops per side explicitly restored. Internal 10:1 gearing already included in motor-module torque ratings."
+                            }
+}

@@ -1,0 +1,41 @@
+{
+  "source_preview": "Corrected native CAD assembly export; original CAD files are not included",
+  "source_sha256": "7c408a4239a7e12e6cc18ef5580dbbc595f44ec8e1bf80f64184c82a0c36541b",
+  "points_m": {
+    "O": [
+      5.385127667334089e-06,
+      -0.0100000000000782
+    ],
+    "Q": [
+      -0.04332801929105626,
+      -0.03494425908873801
+    ],
+    "K": [
+      -0.09532810459350759,
+      -0.06487736999519016
+    ],
+    "S": [
+      0.04450783928414236,
+      0.01279323526942313
+    ],
+    "C": [
+      0.016438175651153523,
+      -0.04023594522142421
+    ],
+    "E": [
+      -0.07362063868925649,
+      -0.017412653058603008
+    ],
+    "D": [
+      -0.1261876637044223,
+      -0.04633855634709052
+    ],
+    "W": [
+      0.035949928466474726,
+      -0.07866424911648066
+    ]
+  },
+  "projection": "x=CAD X,z=CAD Y",
+  "status": "Corrected preview geometry; W derived from recorded rigid lower-leg rotation",
+  "original_assembly_unchanged": true
+}

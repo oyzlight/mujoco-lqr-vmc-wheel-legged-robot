@@ -1,0 +1,55 @@
+{
+  "topology": "native CAD two-loop linkage; no knee motors",
+  "source": "Corrected native CAD assembly export; original CAD files are not included",
+  "models": [
+    {
+      "file": "robot.xml",
+      "actuator_order": [
+        "left_hip_A",
+        "left_hip_B",
+        "left_wheel_joint",
+        "right_hip_A",
+        "right_hip_B",
+        "right_wheel_joint"
+      ]
+    },
+    {
+      "file": "robot_planar.xml",
+      "actuator_order": [
+        "left_hip_A",
+        "left_hip_B",
+        "left_wheel_joint",
+        "right_hip_A",
+        "right_hip_B",
+        "right_wheel_joint"
+      ]
+    },
+    {
+      "file": "robot_fixed.xml",
+      "actuator_order": [
+        "left_hip_A",
+        "left_hip_B",
+        "left_wheel_joint",
+        "right_hip_A",
+        "right_hip_B",
+        "right_wheel_joint"
+      ]
+    },
+    {
+      "file": "robot_steps.xml",
+      "actuator_order": [
+        "left_hip_A",
+        "left_hip_B",
+        "left_wheel_joint",
+        "right_hip_A",
+        "right_hip_B",
+        "right_wheel_joint"
+      ]
+    }
+  ],
+  "estimated_total_mass_kg": 4.77,
+  "mass_inertia_status": "Illustrative mirrored estimates, not measured CAD material properties",
+  "constraints": "two connect closures + two inverse 1:1 joint couplings per side",
+  "self_collision": false,
+  "limits_status": "7/2 Nm peak-only XML; unknown mechanical stops; not a hardware-validated model"
+}

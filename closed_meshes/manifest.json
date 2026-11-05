@@ -1,0 +1,248 @@
+{
+  "source": "Corrected native CAD assembly export; original CAD files are not included",
+  "coordinates": "X=CAD X,Y=-CAD Z,Z=CAD Y; metres; absolute part coordinates",
+  "bodyCount": 107,
+  "groups": [
+    {
+      "group": "Fixed_Chassis",
+      "file": "Fixed_Chassis.stl",
+      "bodies": [
+        "Retain_53_Center48_rear_thrust_washer_T0_5",
+        "Simplified_94_DM4310_stationary_body",
+        "Retain_84_ML2.5_Plate_side_right_ref1027",
+        "Retain_89_ML1.0-fastening_6x6x40",
+        "Retain_96_ML2.5_Plate_side_left_ref1027",
+        "Retain_24_Front_bezel_spacer_OD5_ID3_4_L10_9",
+        "Layout_battery_soft_pad_135x43_T1",
+        "Retain_15_BH_cover_hinge_shim_2",
+        "Retain_2_Screen_MPI5518_143_4x75_3x10_6_REVIEW",
+        "Retain_3_Front_inset_wrap_HDMI_to_face_T2_5_R2",
+        "Retain_65_Center48_split_clamp_D28_ID11_9_W7",
+        "Retain_7_Hinge38_R3_moving",
+        "Retain_9_BH_cover_hinge_shim_1",
+        "Retain_20_Front_bezel_spacer_OD5_ID3_4_L10_9",
+        "Retain_59_Center48_fixed_aluminum_tube_OD11_8_ID8_L48",
+        "Retain_14_BH_cover_hinge_shim_3",
+        "Retain_19_Front_bezel_spacer_OD5_ID3_4_L10_9",
+        "Retain_4_Hinge38_R3_fixed",
+        "Layout_CNC_roof_boards_direct_NO_STANDOFFS_NO_INSULATION_PAD",
+        "Retain_88_ML1.0-fastening_6x6x40",
+        "Layout_CNC_removable_guide_retaining_strip_T2_M2x6",
+        "Retain_101_Front_carrier_flat_front_four_M3",
+        "Retain_63_Center48_front_thrust_washer_T0_1",
+        "Simplified_92_DM4310_stationary_body",
+        "Retain_21_G2249_cover_lever",
+        "Retain_86_ML1.0-fastening_6x6x40",
+        "Simplified_93_DM4310_stationary_body",
+        "Retain_23_Front_bezel_spacer_OD5_ID3_4_L10_9",
+        "Retain_81_ML1.0_Plate_above_B_G2249_M10_reserved_holes",
+        "Layout_CNC_short_slide_gate_lift20_then_rearward_6",
+        "Retain_10_BH_cover_hinge_shim_4",
+        "Layout_CNC_bay_148x56_R4_REAR_RELIEF_open_short_guides",
+        "Retain_1_Rear_cover_B_G2249_adjust_mounts",
+        "Retain_5_Hinge38_R3_moving",
+        "Retain_16_G2249_cover_backer",
+        "Retain_11_G2249_cover_base",
+        "Layout_CNC_removable_guide_retaining_strip_T2_M2x6_4",
+        "Retain_87_ML1.0-fastening_6x6x40",
+        "Retain_61_Center48_rear_spacer_OD36_ID11_82_T4",
+        "Retain_13_G2249_cover_spring_REFERENCE",
+        "Retain_83_ML1.0-fastening_6x6x40",
+        "Retain_104_Front_angle_lower_R4_HDMI_gap",
+        "Retain_58_Center48_split_clamp_D28_ID11_9_W7",
+        "Retain_85_ML1.0-fastening_6x6x40",
+        "Layout_DMMC02_front_direct_on_roof_USER_PROTECTIVE_CASE",
+        "Retain_6_Hinge38_R3_fixed",
+        "Retain_105_Front_angle_upper_R4_HDMI_gap",
+        "Retain_107_Front_angle_upper_R4_HDMI_gap",
+        "Retain_22_G2249_cover_spring_REFERENCE",
+        "Retain_106_Front_angle_lower_R4_HDMI_gap",
+        "Retain_56_Center48_front_thrust_washer_T0_1",
+        "Layout_PowerBoard_rear_direct_on_roof",
+        "Simplified_95_DM4310_stationary_body",
+        "Layout_battery_6S_3500mAh_135x43x42_NOMINAL",
+        "Retain_54_Center48_rear_spacer_OD36_ID11_82_T4",
+        "Retain_18_G2249_cover_backer",
+        "Retain_82_ML1.0-fastening_6x6x40",
+        "Retain_51_Center48_fixed_aluminum_tube_OD11_8_ID8_L48",
+        "Retain_60_Center48_rear_thrust_washer_T0_5",
+        "Retain_17_G2249_cover_base",
+        "Retain_90_ML1.0_Plate_below_lowerbay5_direct_hinges",
+        "Retain_12_G2249_cover_lever",
+        "Retain_91_ML1.0-fastening_6x6x40"
+      ],
+      "triangles": 45138
+    },
+    {
+      "group": "L_Coupler_29",
+      "file": "L_Coupler_29.stl",
+      "bodies": [
+        "Retain_71_ML1.0-Connecting_rod_C"
+      ],
+      "triangles": 388
+    },
+    {
+      "group": "L_Coupler_35",
+      "file": "L_Coupler_35.stl",
+      "bodies": [
+        "Retain_72_ML1.0-Connecting_rod_A"
+      ],
+      "triangles": 388
+    },
+    {
+      "group": "L_Input_A",
+      "file": "L_Input_A.stl",
+      "bodies": [
+        "Simplified_50_DM4310_output_rotor",
+        "Retain_46_Input_crank_mirror.gear"
+      ],
+      "triangles": 5262
+    },
+    {
+      "group": "L_Input_B",
+      "file": "L_Input_B.stl",
+      "bodies": [
+        "Simplified_45_DM4310_output_rotor",
+        "Retain_43_Center48_input_motor_hub_PCD27_L14_9",
+        "Retain_48_ML1.0-Driving_Pulley_front.gear"
+      ],
+      "triangles": 6980
+    },
+    {
+      "group": "L_Lower_Leg",
+      "file": "L_Lower_Leg.stl",
+      "bodies": [
+        "Simplified_79_ML1.0-DM6215",
+        "Retain_75_ML1.0-Joint_Compress",
+        "Retain_80_ML1.0-Wheel_Lid",
+        "Retain_74_ML1.0-Joint_Compress",
+        "Retain_77_ML1.0-Leg_B",
+        "Retain_78_ML1.0-Joint_Lining_min"
+      ],
+      "triangles": 4100
+    },
+    {
+      "group": "L_Main_B",
+      "file": "L_Main_B.stl",
+      "bodies": [
+        "Retain_64_Center48_outer_gear2",
+        "Retain_73_ML1.0-Connecting_rod_shim",
+        "Retain_76_ML1.0-Joint_Lining",
+        "Retain_68_ML1.0-Leg_A"
+      ],
+      "triangles": 7716
+    },
+    {
+      "group": "L_Output_A",
+      "file": "L_Output_A.stl",
+      "bodies": [
+        "Retain_69_Center48_small_crank_left_native",
+        "Retain_62_Center48_inner_gear1",
+        "Retain_66_Center48_hollow_sleeve_left"
+      ],
+      "triangles": 6108
+    },
+    {
+      "group": "L_Rocker_30",
+      "file": "L_Rocker_30.stl",
+      "bodies": [
+        "Retain_70_ML1.0-Connecting_rod_B"
+      ],
+      "triangles": 1020
+    },
+    {
+      "group": "L_Wheel",
+      "file": "L_Wheel.stl",
+      "bodies": [
+        "Retain_40_ML1.0-Wheel"
+      ],
+      "triangles": 408
+    },
+    {
+      "group": "R_Coupler_29",
+      "file": "R_Coupler_29.stl",
+      "bodies": [
+        "Retain_29_ML1.0-Connecting_rod_C"
+      ],
+      "triangles": 388
+    },
+    {
+      "group": "R_Coupler_35",
+      "file": "R_Coupler_35.stl",
+      "bodies": [
+        "Retain_35_ML1.0-Connecting_rod_A"
+      ],
+      "triangles": 388
+    },
+    {
+      "group": "R_Input_A",
+      "file": "R_Input_A.stl",
+      "bodies": [
+        "Simplified_47_DM4310_output_rotor",
+        "Retain_97_ML1.0-Driving_Pulley_back.gear"
+      ],
+      "triangles": 5460
+    },
+    {
+      "group": "R_Input_B",
+      "file": "R_Input_B.stl",
+      "bodies": [
+        "Retain_98_Center48_input_motor_hub_PCD27_L14_9",
+        "Retain_26_ML1.0-Driving_Pulley_front.gear",
+        "Simplified_44_DM4310_output_rotor"
+      ],
+      "triangles": 6980
+    },
+    {
+      "group": "R_Lower_Leg",
+      "file": "R_Lower_Leg.stl",
+      "bodies": [
+        "Retain_36_ML1.0-Joint_Lining_min",
+        "Retain_33_ML1.0-Joint_Compress",
+        "Retain_32_ML1.0-Leg_B",
+        "Retain_38_ML1.0-Joint_Compress",
+        "Simplified_37_ML1.0-DM6215",
+        "Retain_39_ML1.0-Wheel_Lid"
+      ],
+      "triangles": 4104
+    },
+    {
+      "group": "R_Main_B",
+      "file": "R_Main_B.stl",
+      "bodies": [
+        "Retain_27_ML1.0-Leg_A",
+        "Retain_34_ML1.0-Joint_Lining",
+        "Retain_31_ML1.0-Connecting_rod_shim",
+        "Retain_55_Center48_outer_gear2"
+      ],
+      "triangles": 7712
+    },
+    {
+      "group": "R_Output_A",
+      "file": "R_Output_A.stl",
+      "bodies": [
+        "Retain_28_Center48_small_crank_right_native",
+        "Retain_52_Center48_hollow_sleeve_right",
+        "Retain_57_Center48_inner_gear1"
+      ],
+      "triangles": 6104
+    },
+    {
+      "group": "R_Rocker_30",
+      "file": "R_Rocker_30.stl",
+      "bodies": [
+        "Retain_30_ML1.0-Connecting_rod_B"
+      ],
+      "triangles": 1020
+    },
+    {
+      "group": "R_Wheel",
+      "file": "R_Wheel.stl",
+      "bodies": [
+        "Retain_67_ML1.0-Wheel"
+      ],
+      "triangles": 408
+    }
+  ],
+  "sourceModified": false
+}

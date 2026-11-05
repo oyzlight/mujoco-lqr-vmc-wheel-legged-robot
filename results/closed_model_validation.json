@@ -1,0 +1,168 @@
+{
+  "robot.xml": {
+    "nq": 25,
+    "nv": 24,
+    "nu": 6,
+    "neq": 8,
+    "equality_rank": 12,
+    "physical_dofs": 12,
+    "visual_bounds_error_m": 7.260548356979868e-09,
+    "mass_kg": 4.77
+  },
+  "robot_planar.xml": {
+    "nq": 21,
+    "nv": 21,
+    "nu": 6,
+    "neq": 8,
+    "equality_rank": 12,
+    "physical_dofs": 9,
+    "visual_bounds_error_m": 7.260548356979868e-09,
+    "mass_kg": 4.77
+  },
+  "robot_fixed.xml": {
+    "nq": 18,
+    "nv": 18,
+    "nu": 6,
+    "neq": 8,
+    "equality_rank": 12,
+    "physical_dofs": 6,
+    "visual_bounds_error_m": 7.260548356979868e-09,
+    "mass_kg": 4.77
+  },
+  "kinematics": {
+    "jacobian_FD_error": 2.4089188976894604e-11,
+    "MuJoCo_FK_error_m": 2.660970462845736e-14,
+    "virtual_work_error_W": 0.0
+  },
+  "six_motor_pulses": [
+    {
+      "actuator": "left_hip_A_motor",
+      "angle_change_rad": 0.03983572215254738,
+      "loop_error_m": 7.464078933112603e-07,
+      "gear_error_rad": 5.494735768962755e-05
+    },
+    {
+      "actuator": "left_hip_B_motor",
+      "angle_change_rad": 0.03130266801627829,
+      "loop_error_m": 6.437985220236881e-07,
+      "gear_error_rad": 4.623207876380819e-05
+    },
+    {
+      "actuator": "left_wheel_joint_motor",
+      "angle_change_rad": 0.9648741698458894,
+      "loop_error_m": 5.2719745350528194e-08,
+      "gear_error_rad": 3.758196065462016e-06
+    },
+    {
+      "actuator": "right_hip_A_motor",
+      "angle_change_rad": 0.03983572215254738,
+      "loop_error_m": 7.464078933112603e-07,
+      "gear_error_rad": 5.494735768962755e-05
+    },
+    {
+      "actuator": "right_hip_B_motor",
+      "angle_change_rad": 0.03130266801627829,
+      "loop_error_m": 6.437985220236881e-07,
+      "gear_error_rad": 4.623207876380819e-05
+    },
+    {
+      "actuator": "right_wheel_joint_motor",
+      "angle_change_rad": 0.9648741698458894,
+      "loop_error_m": 5.2719745350528194e-08,
+      "gear_error_rad": 3.758196065462016e-06
+    }
+  ],
+  "equilibrium": {
+    "parameters": [
+      0.2294964609542545,
+      0.05966703669987955,
+      17.46722250002384,
+      -0.07365424215363499,
+      6.837617039357008e-16,
+      -0.00042878446267884736,
+      0.00039698232998730234,
+      -2.680478048441074e-05,
+      -7.394511210329918e-06,
+      -0.0001405683729705425,
+      6.040343989008229e-05
+    ],
+    "parameter_order": [
+      "root_z",
+      "ideal_leg_lean",
+      "radial_feedforward",
+      "leg_moment_feedforward",
+      "wheel_feedforward",
+      "input_A_deflection",
+      "input_B_deflection",
+      "rocker_deflection",
+      "rod29_deflection",
+      "lower_deflection",
+      "rod35_deflection"
+    ],
+    "soft_constraint_offsets": [
+      -0.00042878446267884736,
+      0.00039698232998730234,
+      0.0,
+      0.0,
+      -2.680478048441074e-05,
+      -7.394511210329918e-06,
+      -0.0001405683729705425,
+      6.040343989008229e-05,
+      0.0
+    ],
+    "max_acceleration": 0.0,
+    "state": [
+      -0.010712933983657386,
+      0.05958520261792414,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "qpos": [
+      0.0,
+      0.0,
+      0.2294964609542545,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.3056921529942427,
+      0.17128999741306658,
+      1.3052633685315638,
+      -1.0760435506633816,
+      -0.17089301508307927,
+      1.0760093513721705,
+      -1.0758754645231055,
+      1.0429053176303866,
+      0.0,
+      -1.3056921529942427,
+      0.17128999741306658,
+      1.3052633685315638,
+      -1.0760435506633816,
+      -0.17089301508307927,
+      1.0760093513721705,
+      -1.0758754645231055,
+      1.0429053176303866,
+      0.0
+    ],
+    "motor_torque": [
+      -1.1263995890907286,
+      1.2000538312443634,
+      3.418808519678504e-16,
+      -1.1263995890907286,
+      1.2000538312443634,
+      3.418808519678504e-16
+    ]
+  },
+  "lqr_max_pole": 0.9919543337702114,
+  "fixed_point_drift": [
+    1.3877787807814457e-17,
+    -8.257283745649602e-16,
+    -8.881784197001252e-16,
+    3.096737930792031e-14,
+    -2.376707021463776e-13,
+    -1.0783761665341153e-13
+  ],
+  "passed": true
+}

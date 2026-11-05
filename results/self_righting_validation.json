@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "supported_front_back_cases": [
+    {
+      "initial_pitch_deg": 70.0,
+      "completion_time_s": 1.1449999999999294,
+      "final_height_m": 0.2294962219105288,
+      "final_pitch_deg": -0.0001748708341807264,
+      "peak_motor_torque_Nm": [
+        7.0,
+        7.0,
+        2.0,
+        7.0,
+        7.0,
+        2.0
+      ],
+      "attempts": 1,
+      "both_wheels_supporting": true,
+      "body_ground_contact": false,
+      "state_rewrites_during_control": false,
+      "external_forces": false
+    },
+    {
+      "initial_pitch_deg": -70.0,
+      "completion_time_s": 1.8049999999998567,
+      "final_height_m": 0.22949725635991675,
+      "final_pitch_deg": -7.390354983193646e-05,
+      "peak_motor_torque_Nm": [
+        7.0,
+        7.0,
+        2.0,
+        7.0,
+        7.0,
+        2.0
+      ],
+      "attempts": 1,
+      "both_wheels_supporting": true,
+      "body_ground_contact": false,
+      "state_rewrites_during_control": false,
+      "external_forces": false
+    },
+    {
+      "initial_pitch_deg": 110.0,
+      "completion_time_s": 3.3550000000002878,
+      "final_height_m": 0.22950007344359036,
+      "final_pitch_deg": 0.0006512888016717985,
+      "peak_motor_torque_Nm": [
+        7.0,
+        7.0,
+        2.0,
+        7.0,
+        7.0,
+        2.0
+      ],
+      "attempts": 1,
+      "both_wheels_supporting": true,
+      "body_ground_contact": false,
+      "state_rewrites_during_control": false,
+      "external_forces": false
+    },
+    {
+      "initial_pitch_deg": -110.0,
+      "completion_time_s": 3.9350000000004814,
+      "final_height_m": 0.2294929873156601,
+      "final_pitch_deg": -0.0006265430207260274,
+      "peak_motor_torque_Nm": [
+        7.0,
+        7.0,
+        2.0,
+        7.0,
+        7.0,
+        2.0
+      ],
+      "attempts": 1,
+      "both_wheels_supporting": true,
+      "body_ground_contact": false,
+      "state_rewrites_during_control": false,
+      "external_forces": false
+    }
+  ],
+  "side_lying_supported": false,
+  "fully_inverted_supported": false,
+  "simulation_reset_used": false
+}

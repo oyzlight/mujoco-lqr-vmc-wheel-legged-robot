@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+results/*
+!results/.gitkeep
+!results/*_validation.json
+preview.png
+validation.json

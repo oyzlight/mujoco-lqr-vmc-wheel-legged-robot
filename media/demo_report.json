@@ -1,0 +1,194 @@
+[
+  {
+    "video": "movement.mp4",
+    "passed": true,
+    "simulated_duration_s": 13.500000000005008,
+    "peak_motor_torque_Nm": [
+      1.1583157272468487,
+      1.2193887186648968,
+      0.07894003518488257,
+      1.158315727273909,
+      1.2193887187235073,
+      0.07894003518482573
+    ],
+    "final_body_height_m": 0.2295171767513512,
+    "final_wheel_positions_m": [
+      [
+        -0.008132523414552728,
+        0.15700000000070052,
+        0.03982716690385099
+      ],
+      [
+        -0.008132523414853252,
+        -0.15699999999929903,
+        0.03982716690384584
+      ]
+    ],
+    "final_speed_m_s": 0.005999715238664925,
+    "final_tilt_rad": 8.567042463436536e-05,
+    "initial_pitch_deg": null,
+    "physical_recovery_complete_s": null,
+    "state_rewrites_during_control": false,
+    "external_forces": false
+  },
+  {
+    "video": "rotation.mp4",
+    "passed": true,
+    "simulated_duration_s": 13.500000000005008,
+    "peak_motor_torque_Nm": [
+      1.5575674056676612,
+      1.5287301111721148,
+      0.13677587176158587,
+      1.5582709953760607,
+      1.5276672842981731,
+      0.13739281250838228
+    ],
+    "final_body_height_m": 0.22949642823350386,
+    "final_wheel_positions_m": [
+      [
+        0.13564854111581423,
+        0.060115304676774416,
+        0.03982716826985898
+      ],
+      [
+        -0.1548379616303802,
+        -0.059106344610764736,
+        0.03982716374120342
+      ]
+    ],
+    "final_speed_m_s": 4.318030388051773e-05,
+    "final_tilt_rad": 1.4210403921355308e-06,
+    "initial_pitch_deg": null,
+    "physical_recovery_complete_s": null,
+    "state_rewrites_during_control": false,
+    "external_forces": false
+  },
+  {
+    "video": "jump.mp4",
+    "passed": true,
+    "simulated_duration_s": 5.499999999999671,
+    "peak_motor_torque_Nm": [
+      5.818383607803941,
+      6.027341382015891,
+      2.0,
+      5.818383607787643,
+      6.027341382019167,
+      2.0
+    ],
+    "final_body_height_m": 0.2294792724718099,
+    "final_wheel_positions_m": [
+      [
+        0.0032333322800766617,
+        0.15699999999808442,
+        0.03982716547516227
+      ],
+      [
+        0.0032333322799467656,
+        -0.15700000000191544,
+        0.03982716547516173
+      ]
+    ],
+    "final_speed_m_s": -0.004580366805749034,
+    "final_tilt_rad": 6.986129549502174e-05,
+    "initial_pitch_deg": null,
+    "physical_recovery_complete_s": null,
+    "state_rewrites_during_control": false,
+    "external_forces": false
+  },
+  {
+    "video": "self_righting_forward.mp4",
+    "passed": true,
+    "simulated_duration_s": 5.499999999999671,
+    "peak_motor_torque_Nm": [
+      7.0,
+      7.0,
+      2.0,
+      7.0,
+      7.0,
+      2.0
+    ],
+    "final_body_height_m": 0.2294964599221516,
+    "final_wheel_positions_m": [
+      [
+        -0.05554056544623115,
+        0.15700000000248426,
+        0.0398271659425696
+      ],
+      [
+        -0.05554056544613546,
+        -0.15699999999751524,
+        0.03982716594257489
+      ]
+    ],
+    "final_speed_m_s": 6.593813625371121e-07,
+    "final_tilt_rad": 4.98085261924075e-09,
+    "initial_pitch_deg": 70.0,
+    "physical_recovery_complete_s": 1.1449999999999294,
+    "state_rewrites_during_control": false,
+    "external_forces": false
+  },
+  {
+    "video": "self_righting_backward.mp4",
+    "passed": true,
+    "simulated_duration_s": 5.499999999999671,
+    "peak_motor_torque_Nm": [
+      7.0,
+      7.0,
+      2.0,
+      7.0,
+      7.0,
+      2.0
+    ],
+    "final_body_height_m": 0.2294969956872146,
+    "final_wheel_positions_m": [
+      [
+        0.034384011834260694,
+        0.15699999999951536,
+        0.03982716595995342
+      ],
+      [
+        0.03438401183436066,
+        -0.15700000000048459,
+        0.039827165959958666
+      ]
+    ],
+    "final_speed_m_s": 0.00012882064470867862,
+    "final_tilt_rad": 2.207161504008681e-06,
+    "initial_pitch_deg": -70.0,
+    "physical_recovery_complete_s": 1.8049999999998567,
+    "state_rewrites_during_control": false,
+    "external_forces": false
+  },
+  {
+    "video": "step15.mp4",
+    "passed": true,
+    "simulated_duration_s": 10.00000000000073,
+    "peak_motor_torque_Nm": [
+      6.9899587609942415,
+      7.0,
+      2.0,
+      6.989958760972861,
+      7.0,
+      2.0
+    ],
+    "final_body_height_m": 0.37949634388534476,
+    "final_wheel_positions_m": [
+      [
+        1.9889584411593164,
+        0.15695745065866484,
+        0.18982716596975985
+      ],
+      [
+        1.9889583882062265,
+        -0.15704254934133097,
+        0.18982716596982405
+      ]
+    ],
+    "final_speed_m_s": 0.00018003787725312292,
+    "final_tilt_rad": 6.017427460758284e-07,
+    "initial_pitch_deg": null,
+    "physical_recovery_complete_s": null,
+    "state_rewrites_during_control": false,
+    "external_forces": false
+  }
+]
